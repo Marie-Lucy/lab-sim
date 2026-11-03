@@ -6,6 +6,8 @@
 
 Simulador educativo de **intervención coronaria percutánea (ICP)** en el navegador, para estudiantes de medicina: implantar un stent en una estenosis del 90 % de la **descendente anterior (DA) media** por **acceso radial derecho**.
 
+**Pruébalo en línea:** https://marie-lucy.github.io/lab-sim/
+
 ```bash
 npm install && npm run dev
 ```
@@ -158,6 +160,10 @@ También hay botones en pantalla para mouse y pantallas táctiles. La interfaz s
 - **Pantallas táctiles**: botones más grandes; en celulares con muesca, la interfaz respeta el área segura.
 - **Monitores grandes** (≥ 1680 px): la interfaz se agranda (×1.15, o ×1.35 desde 2300 px) para leerse de lejos.
 - En pantallas chicas, los botones del debriefing quedan fijos abajo mientras se lee.
+
+## Publicación
+
+Cada cambio en `main` se publica solo en GitHub Pages: `.github/workflows/pages.yml` instala las dependencias, corre los tests, construye con rutas relativas (`npm run build -- --base=./`) y despliega `dist/`. Si un test falla, no se publica.
 
 ## Cómo está hecho
 
